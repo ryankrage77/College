@@ -1,0 +1,9 @@
+c:\users\admin\documents\visual studio 2015\Projects\compSciProject\compSciProject\bin\Debug\compSciProject.exe.config
+C:\Users\Admin\documents\visual studio 2015\Projects\compSciProject\compSciProject\bin\Debug\compSciProject.exe
+C:\Users\Admin\documents\visual studio 2015\Projects\compSciProject\compSciProject\bin\Debug\compSciProject.pdb
+C:\Users\Admin\documents\visual studio 2015\Projects\compSciProject\compSciProject\obj\Debug\compSciProject.csprojResolveAssemblyReference.cache
+C:\Users\Admin\documents\visual studio 2015\Projects\compSciProject\compSciProject\obj\Debug\compSciProject.Form1.resources
+C:\Users\Admin\documents\visual studio 2015\Projects\compSciProject\compSciProject\obj\Debug\compSciProject.Properties.Resources.resources
+C:\Users\Admin\documents\visual studio 2015\Projects\compSciProject\compSciProject\obj\Debug\compSciProject.csproj.GenerateResource.Cache
+C:\Users\Admin\documents\visual studio 2015\Projects\compSciProject\compSciProject\obj\Debug\compSciProject.exe
+C:\Users\Admin\documents\visual studio 2015\Projects\compSciProject\compSciProject\obj\Debug\compSciProject.pdb
