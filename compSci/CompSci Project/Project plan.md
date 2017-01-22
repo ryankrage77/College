@@ -4,9 +4,9 @@
 - [ ] Disclaimer (it's only a project! No warranty or guarantees)
 
 # Analysis
-- [ ] Outline clients situation & basic need (small company, zero-hour contract, employee pay tracker)
-- [ ] Record interview & transcribe
-- [ ] Come up with a set of features & functions based on interview
+- [x] Outline clients situation & basic need (small company, zero-hour contract, employee pay tracker)
+- [x] Record interview & transcribe
+- [x] Come up with a set of features & functions based on interview
 - [ ] extrapolate more features/functions from generic software (basic obvious stuff)
 - [ ] explain why using GUI rather than command line
 - [ ] ER diagram

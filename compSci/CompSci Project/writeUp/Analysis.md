@@ -32,3 +32,5 @@ These are additional functionality, and are things the application should do to 
 ###### Export and import data
 The application should export the data as a format that can be used by a spreadsheet program such as Excel.
 The format for importing was never specified, and as there will only be one instance of this application, importing seems unnecessary and so will not be in the application.
+
+### Basic Design Choices ???
