@@ -1,13 +1,13 @@
 # <p align="center">Evaluation</p>
-My application fulfils all of its functions, which were to keep a record of employees and their tasks and calculate their pay.  
+My application fulfils all of its specified functions, which were to keep a record of employees and their tasks and calculate their pay.  
 
-It does not have the features the client requested – import and export – although it does have a save feature.  
+It does not have one of the features the client requested – import and export – although it does have a save feature.  
 
 I deemed the save feature to be a function rather than a feature, as one of the goals of the application was to be an improvement over a spreadsheet, and without a save function this wouldn’t be possible, regardless of how many other features it had.
 
 I thought that the import feature was unnecessary, as this is a bespoke application to be used by one person. This means the feature would only ever be used once to import a very small data set, and therefore would not be worth the time it would take to implement. It would be quicker and easier for the client to simply enter the data manually, which he did without any trouble.
 
-I also did not add an export feature, due to time constraints and the complexity of implementing it. However, data can be shared between instances of the application by manually copying the data folder and putting in the folder of another application, a happy side-effect of the way the data is stored.  
+I also did not add an export feature, due to time constraints and the complexity of implementing it. However, data can be shared between instances of the application by manually copying the data folder and putting it in the folder of another instance of the application, a happy side-effect of the way the data is stored.  
 I made the decision to store each of the employees on separate lines in a text file, with values comma-separated, and have a different file for each employee's tasks. This was partially due the fact it is easier to access text files than XML or a database, and as the dataset is very small, having a more rigid storage solution was not necessary.  
 This means that it is relatively easy to transfer all the saved data between different versions of the program, as my client tried a few different updated versions while I was testing it.  
 

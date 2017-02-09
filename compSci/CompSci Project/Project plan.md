@@ -14,6 +14,8 @@
 - [ ] ​Confirm scope/boundaries with client
 - [ ] ER diagram
 - [ ] IOPS chart
+- [ ] Use-case diagram
+- [ ] SMART onjectives
 
 # Design
 - [ ] explain how each function/feature will be implemented, including:
@@ -34,14 +36,16 @@
 
 # Testing
 - [x] Come up with test strategy
-- [ ] test EVERY function & feature, including pay calculation and help feature (80% done)
+- [x] test EVERY function & feature, including pay calculation and help feature (80% done)
 - [x] explain lack of verification
 
 # Evaluation
 - [x] copy old version, add in notes from Lez and OneNote
 - [x] add more detail to lengthen
 - [ ] User Acceptance Testing (feedback)
-- [ ] Did the project pass or fail? (SMART objectives)
+- [ ] How the changes were agreed upon
+- [ ] Change reasons for not implementing features (time constraints in order to meet deadline, was within scope but takes too much resources & not critical. i.e: optimisation to the satisfaction of the client)
+- [ ] Did the project pass or fail? (Specific Measurable Acheivable Relevant Time-bound objectives)
 
 # Other
 - [x] Appendix ('refer to Appendix x.x')
@@ -50,5 +54,5 @@
 - [ ] see picture of board (write up!)
 
 # TO DO
-- [ ] Add introduction - move outline, sufficient complexity & disclaimer to intro, move IO to analysis
+- [x] Add introduction - move outline, sufficient complexity & disclaimer to intro, move IO to analysis
 - [ ] Convert MD to .docx/.pdf
