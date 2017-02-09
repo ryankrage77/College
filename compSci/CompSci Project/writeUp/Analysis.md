@@ -1,22 +1,22 @@
 # <p align="center">Analysis</p>
 ### Interview
 I asked a series of questions to establish the scope of the problem and to find out what my client wanted the application to do. The following is a summarization of the conversation we had over IM (it has been slightly edited for clarity);  
-```
-Me: How many employees do you currently have?
-Client: Currently we have six employees.
-M: Will the program need to be able to scale up to accommodate more employees in the future?
-C: Yes, it will need to scale up in the future.
-M: How exactly does the zero-hour contract work?
-C: Employees are paid according to how much work they have completed, not how many hours they have worked.
-M: Who will use the application? Just yourself, or employees too?
-C: Just myself.
-M: Should the data be exportable? If so, in what format?
-C: Yes, to a spreadsheet.
-M: What are the things the application must be able to do?
-C: Have an input for the number of tasks completed, the pay per task, employee name, total amount paid and how much is due.
-M: What features would be nice to have?
-C: Save, export and import.
-```
+
+>Me: How many employees do you currently have?  
+Client: Currently we have six employees.  
+M: Will the program need to be able to scale up to accommodate more employees in the future?  
+C: Yes, it will need to scale up in the future.  
+M: How exactly does the zero-hour contract work?  
+C: Employees are paid according to how much work they have completed, not how many hours they have worked.  
+M: Who will use the application? Just yourself, or employees too?  
+C: Just myself.  
+M: Should the data be exportable? If so, in what format?  
+C: Yes, to a spreadsheet.  
+M: What are the things the application must be able to do?  
+C: Have an input for the number of tasks completed, the pay per task, employee name, total amount paid and how much is due.  
+M: What features would be nice to have?  
+C: Save, export and import.  
+
 Based on this, I came up with a set of functions and features for the application, which I also used to make the design diagrams.  
 ### Functions
 These are things that the application must do to provide a basic level of functionality.  
@@ -30,7 +30,7 @@ The application must also calculate the pay each employee is due, based on how m
 
 ### Features
 These are additional functionality, and are things the application should do to make it easier to use.  
-###### Export and import data
+##### Export and import data
 The application should export the data as a format that can be used by a spreadsheet program such as Excel.
 The format for importing was never specified, and as there will only be one instance of this application, importing seems unnecessary and so will not be in the application.
 ##### Employee information
@@ -38,7 +38,7 @@ Another feature that I added which the cliwent did not request is the option to 
 ##### Employee image
 I also decided to add the option to include an image of the employee, which would make it easier to see which employee's profile was open. I decided to add this as it will be simple to implement and be a useful feature.
 ### Basic Design Choices
-I made the decision to use a GUI rather than a command line interface for several reasons. Firstly, Most users are more comfortable using a GUI than a CLI, so it will the program easier to use. As most users are familair with a GUI, less training would be required than if the program used a CLI.  
+I made the decision to use a GUI rather than a command line interface for several reasons. Firstly, Most users are more comfortable using a GUI than a CLI, so it will the program easier to use. As most users are familiar with a GUI, less training would be required than if the program used a CLI.  
 Secondly, Visual Studio comes with many features that make it very easy to create a Windows Form, so I will not have to program everything from scratch.
 Lastly, by using a Windows Form, the code will be clearer to other programmers than if I created a GUI from scratch, as it will use standard WinForm elements.  
 Another advantage of using a GUI rather than CLI is that program used to create one will use an event-driven model. Event-driven programs are generally simpler to code as the programmer only has to account for events they intend for the user to use, as it will be impossible for the program to do anything else.
@@ -55,6 +55,8 @@ This leads to the next non-basic function - saving data. [EXPLAIN WHY FILES ARE 
 Thirdly, this will be an event-driven program, so the user can input data in any order. Therefore, it must validate this data before passing it to other functions, to ensure that the user cannot break or crash the program by accident.
 ### Priorities
 In order to complete this project within the deadline, it is important to prioritise which aspects of the software I will focus on first.
-For the implementation of the software I will focus first on the functions I outlined above. Then, I will implement the features my client has requested. Lastly, I will worry about the feasibility of the features. This seems counter-intuitive, as logic dictates that a problem cannot be solved unless it is possible to solve. However, as almost any feature a client will request is possble to implement, it will save time to only worry about the feasibility of a function or feature if and when a problem with implementing it arises during the design stage of the software life cycle. This way I will not spend too long worrying about how to implement a feature before I need to.  
+For the implementation of the software I will focus first on the functions I outlined above. Then, I will implement the features my client has requested. Lastly, I will worry about the feasibility of the features. This seems counter-intuitive, as logic dictates that a problem cannot be solved unless it is possible to solve. However, as almost any feature a client will request is possible to implement, it will save time to only worry about the feasibility of a function or feature if and when a problem with implementing it arises during the design stage of the software life cycle. This way I will not spend too long worrying about how to implement a feature before I need to.  
 This would enable me to use a prototyping development model. The advantages of this include more flexibility with implementing features. For example, if I discover a function doesn't work as intended, I can spot this early on and an alternative approach.  
 While prototyping is suitable for small projects such as this one, it does not scale well and would not be suitable for larger, more complex projects involving more developers. Prototyping also often results in projects exceeding deadlines and running over budget. Another problem with prototyping is 'project creep' - when the client sees the incomplete product and is inspired to request additional functions and features which were not part of the original specification.this is the main cause of the previous problem.
+### S.M.A.R.T objectives
+In order to help with evaluating the success of this project, I will create a set of Specific, Measurable, Achievable, Relevant, Time-Bound objectives to complete. The objectives should be S.M.A.R.T so that can be used as a measure of progress and success.
