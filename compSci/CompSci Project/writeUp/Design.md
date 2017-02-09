@@ -2,7 +2,7 @@
 ### Setting & completing tasks
 The primary purpose of the application is to calculate pay for each employee, so first there must be a way to represent and store information about employees.  
 Using OOP (object-orientated programming), each employee could be an instance of a class (created when the user adds a new employee), with tasks as properties of the employee class.  
-This solution would require the user to-re-enter all of the employees information and tasks each time, so it would be even less useful than the spreadsheet my client is currently using.  
+This solution would require the user to re-enter all of the employees information and tasks each time, so it would be even less useful than the spreadsheet my client is currently using.  
 A better solution would be to create a file to store information about each employee. This could be a simple text file, with the name of each task (and whether or not it is completed) on each line.  
 This solution also allows the program to save the data, satisfying two requirements in one.  
 Assuming that different tasks have different pay, this will also be saved in the file.  
@@ -32,3 +32,11 @@ The image could be shown using an imageBox, a winform element for displaying ima
 This will probably be another ListView, but it’s contents will be taken from the subitems of the first. It can be programmatically updated whenever an employee is selected.
 ##### Titles, menus, etc
 There is a standard menu element for winforms, and titles can simply be labels.
+### Help section/manual
+To ensure the client can use the software without assistance, I will include a manual that can be opened from within the application, probably in the form of a web page.
+### Install/portability
+The program will not require installation, but as it requires resources (such as employee data and the help section), I will need to use relative filepaths to locate these resources. See Appendix 1.2 for more on Relative filepaths.
+### Validation
+As this software will be event-driven, it is important to ensure the user's input is correctly validated to avoid exceptions and other errors. the easiest way to do this is remove the need for validation - this can be doen to any inputs that are not actually proccessed, such as employee details. As the data is not used by the program, the user can enter anything they like.  
+Next, is to limit what the user is able to enter. This can be acheived using masks, which will stop invalid input from apearing in the input box. For example, if a text box requires a number, the mask will stop anything other than integers appearing in the input box.  
+Lastly, is checking the input to see if it meets criteria. One place this may be need is for editing employees and thier tasks - an employee cannot be edited if none exist and a task cannot be created if there is no employee to assign it to. This means the program will need check there is actually something to click when the user clicks the ddit button.

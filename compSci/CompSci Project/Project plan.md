@@ -1,49 +1,54 @@
 # Introduction
-- [ ] Scope, boundaries (I/O)
-- [ ] Sufficient complexity
-- [ ] Disclaimer (it's only a project! No warranty or guarantees)
+- [x] Scope, boundaries
+- [x] I/O
+- [x] Sufficient complexity
+- [x] Disclaimer (it's only a project! No warranty or guarantees)
 
 # Analysis
 - [x] Outline clients situation & basic need (small company, zero-hour contract, employee pay tracker)
 - [x] Record interview & transcribe
 - [x] Come up with a set of features & functions based on interview
 - [ ] extrapolate more features/functions from generic software (basic obvious stuff)
-- [ ] explain why using GUI rather than command line
-- [ ] ER diagram
+- [x] explain why using GUI rather than command line
+- [x] Scope
 - [ ] ​Confirm scope/boundaries with client
+- [ ] ER diagram
 - [ ] IOPS chart
 
 # Design
 - [ ] explain how each function/feature will be implemented, including:
-  - [ ] adding & removing employees
-  - [ ] editing employee data
-  - [ ] adding & removing tasks
-  - [ ] editing tasks
-  - [ ] viewing information
-  - [ ] saving
+  - [x] adding & removing employees
+  - [x] editing employee data
+  - [x] adding & removing tasks
+  - [x] editing tasks
+  - [x] viewing information
+  - [x] saving
   - [ ] exporting
-  - [ ] HTML help document
-  - [ ] relative filepaths & portability
+  - [x] HTML help document
+  - [x] relative filepaths & portability
 - [ ] Flow chart for all code (including subroutines)
 
 # Technical solution
-- [ ] code
+- [x] code
 - [ ] use Evernote documentation to show where solution deviated from design
 
 # Testing
-- [ ] Come up with test strategy
-- [ ] test EVERY function & feature, including pay calculation and help feature
-- [ ] explain lack of verification
-- [ ] or add retrospectively by converting to DateTime variable
+- [x] Come up with test strategy
+- [ ] test EVERY function & feature, including pay calculation and help feature (80% done)
+- [x] explain lack of verification
 
 # Evaluation
-- [ ] copy old version, add in notes from Lez and OneNote
-- [ ] add more detail to lengthen
+- [x] copy old version, add in notes from Lez and OneNote
+- [x] add more detail to lengthen
 - [ ] User Acceptance Testing (feedback)
 - [ ] Did the project pass or fail? (SMART objectives)
 
 # Other
-- [ ] Appendix ('refer to x')
+- [x] Appendix ('refer to Appendix x.x')
 - [ ] informal/formal testing
-- [ ] Minimum length of 25 pages (-code)
+- [ ] Minimum length of 25-ish pages (-code)
 - [ ] see picture of board (write up!)
+
+# TO DO
+- [ ] Add introduction - move outline, sufficient complexity & disclaimer to intro, move IO to analysis
+- [ ] Convert MD to .docx/.pdf

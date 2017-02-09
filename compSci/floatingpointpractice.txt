@@ -1,0 +1,17 @@
+736 to floating point:
+
+1024 512 256 128 64 32 16 8 6 4 2 1
+  0   1   0   1  1  1  0  0 0 0 0 0
+
+010111000000 = 0.010111
+
+decimal point is 6 places left, so exponent is 6
+
+0010111 110
+
+reverse to check - convert 0010111 110 to denary:
+
+exponent is 6, so move decimal point 6 places right
+
+0010111000000.0 = 736
+
