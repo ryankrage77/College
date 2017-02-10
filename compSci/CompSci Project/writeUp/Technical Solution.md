@@ -2,7 +2,7 @@ The following is the code used to create the form, and proccess input & output. 
 The code for the help feature can be found in Appendix 1.1.
 The code is annotated through comments I wrote throughout the prototyping proccess. Should they not be clear enough, refer to the flowchart in the design.
 
-```
+```C#
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
