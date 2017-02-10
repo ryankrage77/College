@@ -28,11 +28,11 @@
   - [x] exporting
   - [x] HTML help document
   - [x] relative filepaths & portability
-- [ ] Flow chart for all code (including subroutines)
+- [x] Flow chart for all code (including subroutines)
 
 # Technical solution
 - [x] code
-- [ ] Flowchart to help explain the code
+- [x] help doc code
 
 # Testing
 - [x] Come up with test strategy
