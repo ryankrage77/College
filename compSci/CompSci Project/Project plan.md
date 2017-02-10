@@ -11,11 +11,11 @@
 - [ ] extrapolate more features/functions from generic software (basic obvious stuff)
 - [x] explain why using GUI rather than command line
 - [x] Scope
-- [ ] ​Confirm scope/boundaries with client
-- [ ] <s>ER diagram</s>
-- [ ] IOPS chart
+- [ ] Confirm scope/boundaries with client
+- [ ] class diagram
+- [x] IOPS table
 - [ ] Use-case diagram
-- [ ] SMART objectives
+- [x] SMART objectives
 
 # Design
 - [ ] explain how each function/feature will be implemented, including:
