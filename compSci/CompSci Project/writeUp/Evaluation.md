@@ -16,10 +16,15 @@ Another unrequested feature I added was the option to assign a picture to an emp
 The UI is very plain, but the layout is primarily for making it easy to see information, which it does well.  
 The controls are clumsy, with employees being added via the menu, but editing and adding tasks being done by buttons – also the employee/task must be selected before editing/assigning a task, which may confuse the average user.
 
-However, as this a bespoke application just for my client, I simply told to use the ‘help’ feature I included, which opens a HTML document in the default browser, fully documenting how to use the program, and after reading the document my client said the program was simple to use.
+However, as this a bespoke application just for my client, I simply told him to use the ‘help’ feature I included, which opens a HTML document in the default browser, fully documenting how to use the program, and after reading the document my client said the program was simple to use.
+
+I made quite a few changes to the program and its features throughout the prototyping and coding proccess, the developer equivelant of 'project creep'. Some of this was to optimise the development proccess (i.e remove features that would cost more to implement than they would benifit the user), and some was simply that the client and myself agreed a geature was not needed. However, at each time I did this I contacted my client and informed of what I intended to do, and he agreed that my changes were acceptable.
+
+Once the program was complete, I sent it to the user to try out, and he spotted some typos in user prompt dialogues, which I corrected immediately. Other than that, the client confirmed that the program met all of his requirements and he wqas satisfied with it.
 
 The code is not particularly tidy, efficient or well written, as I was primarily concerned with making it functional first. Rather than making procedures for near-identical functions I copied and pasted code between different parts of the program. I also re-used variable names between similar algorithms, such as the ones for generating file paths to the task data. This will make the code difficult to maintain or edit, as it is not clear they are the same variables. Some variables also have very similar names, and it is not always clear exactly what they are for, particularly those in loops and the names of WinForm elements.
 I have commented the code extensively to make it clear to myself and anyone else who may use it to make it clear what each part does, which somewhat negates the problem of the untidiness and bad variable naming.
 
-Given more time, I would first tidy up the code. This would include making procedures for things such as generating file paths and updating labels, and giving the variables clearer names, particularly the WinForm elements.  
-I would implement an export feature, and perhaps an import feature if my client still wanted it.
+### Future development
+To improve and expand on this program, I would first tidy up the code. This would include making procedures for things such as generating file paths and updating labels, and giving the variables clearer names, particularly the WinForm elements. This will make it much easier for myself or another developer to improve the program at a later date 
+I would also implement an export feature, and perhaps an import feature if my client still wanted it, or if the datasets became much larger.
