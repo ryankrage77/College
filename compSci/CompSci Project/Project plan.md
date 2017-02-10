@@ -8,31 +8,31 @@
 - [x] Outline clients situation & basic need (small company, zero-hour contract, employee pay tracker)
 - [x] Record interview & transcribe
 - [x] Come up with a set of features & functions based on interview
-- [ ] extrapolate more features/functions from generic software (basic obvious stuff)
+- [ ] <s>extrapolate more features/functions from generic software (basic obvious stuff)</s>
 - [x] explain why using GUI rather than command line
 - [x] Scope
-- [ ] Confirm scope/boundaries with client
-- [ ] class diagram
+- [x] Confirm scope/boundaries with client
+- [x] class diagram
 - [x] IOPS table
-- [ ] Use-case diagram
+- [x] Use-case diagram
 - [x] SMART objectives
 
 # Design
-- [ ] explain how each function/feature will be implemented, including:
+- [x] explain how each function/feature will be implemented, including:
   - [x] adding & removing employees
   - [x] editing employee data
   - [x] adding & removing tasks
   - [x] editing tasks
   - [x] viewing information
   - [x] saving
-  - [ ] exporting
+  - [x] exporting
   - [x] HTML help document
   - [x] relative filepaths & portability
 - [ ] Flow chart for all code (including subroutines)
 
 # Technical solution
 - [x] code
-- [ ] use Evernote documentation to show where solution deviated from design
+- [ ] Flowchart to help explain the code
 
 # Testing
 - [x] Come up with test strategy
