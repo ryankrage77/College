@@ -60,3 +60,6 @@ This would enable me to use a prototyping development model. The advantages of t
 While prototyping is suitable for small projects such as this one, it does not scale well and would not be suitable for larger, more complex projects involving more developers. Prototyping also often results in projects exceeding deadlines and running over budget. Another problem with prototyping is 'project creep' - when the client sees the incomplete product and is inspired to request additional functions and features which were not part of the original specification.this is the main cause of the previous problem.
 ### S.M.A.R.T objectives
 In order to help with evaluating the success of this project, I will create a set of Specific, Measurable, Achievable, Relevant, Time-Bound objectives to complete. The objectives should be S.M.A.R.T so that can be used as a measure of progress and success.
+| Objective | Specific | Measurable | Acheivable | Relevant | Time-bound |
+| :-------- | :------- | :--------- |:---------- | :------- | :--------- |
+| Design implementation of features within the deadline   | Item Two |            |            |          |            |

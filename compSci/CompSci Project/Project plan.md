@@ -12,7 +12,7 @@
 - [x] explain why using GUI rather than command line
 - [x] Scope
 - [ ] ​Confirm scope/boundaries with client
-- [ ] ER diagram
+- [ ] <s>ER diagram</s>
 - [ ] IOPS chart
 - [ ] Use-case diagram
 - [ ] SMART objectives
