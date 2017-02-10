@@ -58,8 +58,23 @@ In order to complete this project within the deadline, it is important to priori
 For the implementation of the software I will focus first on the functions I outlined above. Then, I will implement the features my client has requested. Lastly, I will worry about the feasibility of the features. This seems counter-intuitive, as logic dictates that a problem cannot be solved unless it is possible to solve. However, as almost any feature a client will request is possible to implement, it will save time to only worry about the feasibility of a function or feature if and when a problem with implementing it arises during the design stage of the software life cycle. This way I will not spend too long worrying about how to implement a feature before I need to.  
 This would enable me to use a prototyping development model. The advantages of this include more flexibility with implementing features. For example, if I discover a function doesn't work as intended, I can spot this early on and an alternative approach.  
 While prototyping is suitable for small projects such as this one, it does not scale well and would not be suitable for larger, more complex projects involving more developers. Prototyping also often results in projects exceeding deadlines and running over budget. Another problem with prototyping is 'project creep' - when the client sees the incomplete product and is inspired to request additional functions and features which were not part of the original specification.this is the main cause of the previous problem.
+### IOPS
+An Input Output Processing Storage diagram will help to understand the flow of data within the program and how the client interacts with the program. This will help in subsequent stages of the project, such as design.
+| Input | Proccessing | Ouput | Storage |
+| :---- | :---------- | :---- | :------ |
+| Add employee | Create an employee object | Display the employee info | Save the employee details to file |
+| Assign task to employee | Create a task object | format the task details and display them | Save the task details to file |
+| edit employee details | update the details | refresh the output to reflect the changes | save the changes |
+| edit task details | update the details | refresh the output to reflect the changes | save the changes |
+| Add an image | add the filepath to the employee details | display the image | save the filepath in the employee details |
+
 ### S.M.A.R.T objectives
-In order to help with evaluating the success of this project, I will create a set of Specific, Measurable, Achievable, Relevant, Time-Bound objectives to complete. The objectives should be S.M.A.R.T so that can be used as a measure of progress and success.
-| Objective | Specific | Measurable | Acheivable | Relevant | Time-bound |
-| :-------- | :------- | :--------- |:---------- | :------- | :--------- |
-| Design implementation of features within the deadline   | Item Two |            |            |          |            |
+In order to help with evaluating the success of this project, I have used the above information to create a set of Specific, Measurable, Achievable, Relevant, Time-Bound objectives to complete. The goals are things the program should do in order to fulfill the clients requests. The objectives must be S.M.A.R.T so that can be used as a measure of progress and success.
+While the objectives themselves are not necessarily time-bound, I will follow the schedule in appendix 3.1, so all of these goals do have a deadline.
+| Ensure that: | Specific | Measurable | Achievable | Relevant | Time-bound |
+| :----------- | :------- | :--------- |:---------- | :------- | :--------- |
+| User can add employees  | Y | Y | Y| Y | Y |
+| User can edit employees | Y | Y | Y | Y | Y |
+| Program correctly adds pay according to complete tasks | Y | Y | Y |Y | Y |
+| Program saves data | Y | Y | Y | Y | Y |
+| Program retrieves data correctly | Y | Y | Y | Y | Y |
