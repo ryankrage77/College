@@ -56,3 +56,6 @@ As my program is designed to be run on any windows computer in any location, it 
 
 ### 2.3 Use-case Diagram
 [Use case Diagram]
+
+### 3.1
+[schedule]
