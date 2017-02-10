@@ -68,7 +68,7 @@ An Input Output Processing Storage diagram will help to understand the flow of d
 | edit task details | update the details | refresh the output to reflect the changes | save the changes |
 | Add an image | add the filepath to the employee details | display the image | save the filepath in the employee details |
 ### Use-case Diagram
-TO help me better understand how the client will use the program, I made two use-case diagrams. One shows the client current workflow (suing a spreadsheet), and the other shows what the improved workflow with thew new software will look like.
+TO help me better understand how the client will use the program, I made two use-case diagrams. One shows the client current workflow (using a spreadsheet), and the other shows what the improved workflow with the new software will look like.
 
 <img src="as-is use case.PNG">
 <img src="to-be use case.PNG">
