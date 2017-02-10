@@ -67,7 +67,10 @@ An Input Output Processing Storage diagram will help to understand the flow of d
 | edit employee details | update the details | refresh the output to reflect the changes | save the changes |
 | edit task details | update the details | refresh the output to reflect the changes | save the changes |
 | Add an image | add the filepath to the employee details | display the image | save the filepath in the employee details |
-
+### Use-case Diagram
+TO help me better understand how the client will use the program, I made two use-case diagrams. One shows the client current workflow (suing a spreadsheet), and the other shows what the improved workflow with thew new software will look like.
+<img src="as-is use case.PNG">
+<img src="to-be use case.PNG">
 ### S.M.A.R.T objectives
 In order to help with evaluating the success of this project, I have used the above information to create a set of Specific, Measurable, Achievable, Relevant, Time-Bound objectives to complete. The goals are things the program should do in order to fulfill the clients requests. The objectives must be S.M.A.R.T so that can be used as a measure of progress and success.
 While the objectives themselves are not necessarily time-bound, I will follow the schedule in appendix 3.1, so all of these goals do have a deadline.
