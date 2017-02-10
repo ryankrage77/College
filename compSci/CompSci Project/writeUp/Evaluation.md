@@ -25,6 +25,16 @@ Once the program was complete, I sent it to the user to try out, and he spotted 
 The code is not particularly tidy, efficient or well written, as I was primarily concerned with making it functional first. Rather than making procedures for near-identical functions I copied and pasted code between different parts of the program. I also re-used variable names between similar algorithms, such as the ones for generating file paths to the task data. This will make the code difficult to maintain or edit, as it is not clear they are the same variables. Some variables also have very similar names, and it is not always clear exactly what they are for, particularly those in loops and the names of WinForm elements.
 I have commented the code extensively to make it clear to myself and anyone else who may use it to make it clear what each part does, which somewhat negates the problem of the untidiness and bad variable naming.
 
+### Did I meet  my S.M.A.R.T objectives?
+This table shows the S.M.A.R.T objectives I laid out in the analysis, and whether I have completed them.
+| Goal | Met? |
+| :--- | :--- |
+| User can add employees  | Y |
+| User can edit employees | Y |
+| Program correctly adds pay according to complete tasks | Y |
+| Program saves data | Y |
+| Program retrieves data correctly | Y |
+
 ### Future development
 To improve and expand on this program, I would first tidy up the code. This would include making procedures for things such as generating file paths and updating labels, and giving the variables clearer names, particularly the WinForm elements. This will make it much easier for myself or another developer to improve the program at a later date 
 I would also implement an export feature, and perhaps an import feature if my client still wanted it, or if the datasets became much larger.
