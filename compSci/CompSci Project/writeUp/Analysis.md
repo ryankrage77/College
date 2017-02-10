@@ -74,7 +74,7 @@ To help me better understand how the client will use the program, I made two use
 <img src="to-be use case.PNG">
 
 ### Class Diagram
-I have created a class diagram to show the relationship between employees and tasks. While very simple, this could be considered a relational database, but the data set is small enough that a full-blown DBMS is not required (see Scope, above). It also makes it clear which attributes belong to which class.
+I have created a class diagram to show the relationship between employees and tasks. While very simple, this could be considered a relational database (Employees have a one-to-many relationship with tasks), but the data set is small enough that a full-blown DBMS is not required (see Scope, above). It also makes it clear which attributes belong to which class.
 
 <img src="class diagram.PNG">
 
