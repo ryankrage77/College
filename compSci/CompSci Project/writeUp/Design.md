@@ -40,3 +40,8 @@ The program will not require installation, but as it requires resources (such as
 As this software will be event-driven, it is important to ensure the user's input is correctly validated to avoid exceptions and other errors. The easiest way to do this is remove the need for validation - this can be done to any inputs that are not actually proccessed, such as employee details. As the data is not used by the program, the user can enter anything they like.  
 Next, is to limit what the user is able to enter. This can be acheived using masks, which will stop invalid input from apearing in the input box. For example, if a text box requires a number, the mask will stop anything other than integers appearing in the input box.  
 Lastly, is checking the input to see if it meets criteria. One place this may be need is for editing employees and thier tasks - an employee cannot be edited if none exist and a task cannot be created if there is no employee to assign it to. This means the program will need check there is actually something to click when the user clicks the ddit button.
+
+### Flowchart
+This is a flow chart I created to show how the program will work. As the program is event-driven, it does not translate well to flowchart format, but will still help in designing the program.
+
+<img src="flow chart.PNG">
