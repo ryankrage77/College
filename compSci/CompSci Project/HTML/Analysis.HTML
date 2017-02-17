@@ -1,0 +1,168 @@
+<h1><p align="center">Analysis</p></h1>
+<h3>Interview</h3>
+<p>I asked a series of questions to establish the scope of the problem and to find out what my client wanted the application to do. The following is a summarization of the conversation we had over IM (it has been slightly edited for clarity);</p>
+<blockquote>
+<p>Me: How many employees do you currently have?<br>
+Client: Currently we have six employees.<br>
+M: Will the program need to be able to scale up to accommodate more employees in the future?<br>
+C: Yes, it will need to scale up in the future.<br>
+M: How exactly does the zero-hour contract work?<br>
+C: Employees are paid according to how much work they have completed, not how many hours they have worked.<br>
+M: Who will use the application? Just yourself, or employees too?<br>
+C: Just myself.<br>
+M: Should the data be exportable? If so, in what format?<br>
+C: Yes, to a spreadsheet.<br>
+M: What are the things the application must be able to do?<br>
+C: Have an input for the number of tasks completed, the pay per task, employee name, total amount paid and how much is due.<br>
+M: What features would be nice to have?<br>
+C: Save, export and import.</p>
+</blockquote>
+<p>Based on this, I came up with a set of functions and features for the application, which I also used to make the design diagrams.</p>
+<h3>Functions</h3>
+<p>These are things that the application must do to provide a basic level of functionality.<br>
+The application must record set tasks for each employee. The tasks will need some additional information, such as;</p>
+<ul>
+<li>task name/description</li>
+<li>pay (how much it is worth)</li>
+<li>deadline</li>
+<li>status (complete or not)</li>
+</ul>
+<p>The application must also calculate the pay each employee is due, based on how many of the set tasks they have completed.</p>
+<h3>Features</h3>
+<p>These are additional functionality, and are things the application should do to make it easier to use.</p>
+<h5>Export and import data</h5>
+<p>The application should export the data as a format that can be used by a spreadsheet program such as Excel.
+The format for importing was never specified, and as there will only be one instance of this application, importing seems unnecessary and so will not be in the application.</p>
+<h5>Employee information</h5>
+<p>Another feature that I added which the cliwent did not request is the option to add information about the employees, such as the date they were employed, contact information and thier role within the company.</p>
+<h5>Employee image</h5>
+<p>I also decided to add the option to include an image of the employee, which would make it easier to see which employee’s profile was open. I decided to add this as it will be simple to implement and be a useful feature.</p>
+<h3>Basic Design Choices</h3>
+<p>I made the decision to use a GUI rather than a command line interface for several reasons. Firstly, Most users are more comfortable using a GUI than a CLI, so it will the program easier to use. As most users are familiar with a GUI, less training would be required than if the program used a CLI.<br>
+Secondly, Visual Studio comes with many features that make it very easy to create a Windows Form, so I will not have to program everything from scratch.
+Lastly, by using a Windows Form, the code will be clearer to other programmers than if I created a GUI from scratch, as it will use standard WinForm elements.<br>
+Another advantage of using a GUI rather than CLI is that program used to create one will use an event-driven model. Event-driven programs are generally simpler to code as the programmer only has to account for events they intend for the user to use, as it will be impossible for the program to do anything else.</p>
+<h3>Scope</h3>
+<p>While it is possible to create enterprise-level software to do what the client has requested (such as one with networking that utilises database servers), however, this is not what the client needs or has requested and as such it is outside the scope of this project. Therefore, I will be limiting the scope of the application to something more manageable.
+The program will be stand-alone, not requiring any external libraries or dependencies to run. It will not have networking, as the client has stated that only he will use it on one local machine. It will not use a database management system, as a fully-featured database would well exceed the requirements. Features such as multiple tables, relationships and querying large volumes of data will not be needed. Instead, the necessary data management can be done using text files, as updating and delting if records won’t be required. Appending data can be easily implemented with text files, especially concerning the small number of records likely to be involved. Not using a DBMS will also reduce disk and memory usage, increasing performance.<br>
+The program will also not have an installer - instead, it will run ‘out of the box’ (i.e, be a standalone .exe that can run without being installed). (See Appendix 1.2 for more on relative filepaths)</p>
+<h3>Input/Output</h3>
+<p>The program will take input from the user, through the windows form. The form will have buttons and text boxes for entering information such as employee and task details. The output will also be presented via the form, largely through labels.
+Another form of I/O that is not presented to the user is file reading &amp; writing. The programs data must be saved to a file (output), and then read when the program is opened again (input).</p>
+<h3>Sufficient Complexity</h3>
+<p>While the basic premise of this software is quite simple, the client has requested some features that make it more complex. While the actual calculation of pay is very simple, the complexity comes from the data management aspect of the problem. Firstly, the data needs to presented in an easily human-readable format. This will require selecting data and formatting the output accordingly.
+This leads to the next non-basic function - saving data. [EXPLAIN WHY FILES ARE GOOD].<br>
+Thirdly, this will be an event-driven program, so the user can input data in any order. Therefore, it must validate this data before passing it to other functions, to ensure that the user cannot break or crash the program by accident.</p>
+<h3>Priorities</h3>
+<p>In order to complete this project within the deadline, it is important to prioritise which aspects of the software I will focus on first.
+For the implementation of the software I will focus first on the functions I outlined above. Then, I will implement the features my client has requested. Lastly, I will worry about the feasibility of the features. This seems counter-intuitive, as logic dictates that a problem cannot be solved unless it is possible to solve. However, as almost any feature a client will request is possible to implement, it will save time to only worry about the feasibility of a function or feature if and when a problem with implementing it arises during the design stage of the software life cycle. This way I will not spend too long worrying about how to implement a feature before I need to.<br>
+This would enable me to use a prototyping development model. The advantages of this include more flexibility with implementing features. For example, if I discover a function doesn’t work as intended, I can spot this early on and an alternative approach.<br>
+While prototyping is suitable for small projects such as this one, it does not scale well and would not be suitable for larger, more complex projects involving more developers. Prototyping also often results in projects exceeding deadlines and running over budget. Another problem with prototyping is ‘project creep’ - when the client sees the incomplete product and is inspired to request additional functions and features which were not part of the original specification.this is the main cause of the previous problem.</p>
+<h3>IOPS</h3>
+<p>An Input Output Processing Storage diagram will help to understand the flow of data within the program and how the client interacts with the program. This will help in subsequent stages of the project, such as design.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Input</th>
+<th style="text-align:left">Proccessing</th>
+<th style="text-align:left">Ouput</th>
+<th style="text-align:left">Storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Add employee</td>
+<td style="text-align:left">Create an employee object</td>
+<td style="text-align:left">Display the employee info</td>
+<td style="text-align:left">Save the employee details to file</td>
+</tr>
+<tr>
+<td style="text-align:left">Assign task to employee</td>
+<td style="text-align:left">Create a task object</td>
+<td style="text-align:left">format the task details and display them</td>
+<td style="text-align:left">Save the task details to file</td>
+</tr>
+<tr>
+<td style="text-align:left">edit employee details</td>
+<td style="text-align:left">update the details</td>
+<td style="text-align:left">refresh the output to reflect the changes</td>
+<td style="text-align:left">save the changes</td>
+</tr>
+<tr>
+<td style="text-align:left">edit task details</td>
+<td style="text-align:left">update the details</td>
+<td style="text-align:left">refresh the output to reflect the changes</td>
+<td style="text-align:left">save the changes</td>
+</tr>
+<tr>
+<td style="text-align:left">Add an image</td>
+<td style="text-align:left">add the filepath to the employee details</td>
+<td style="text-align:left">display the image</td>
+<td style="text-align:left">save the filepath in the employee details</td>
+</tr>
+</tbody>
+</table>
+<h3>Use-case Diagram</h3>
+<p>To help me better understand how the client will use the program, I made two use-case diagrams. One shows the client current workflow (using a spreadsheet), and the other shows what the improved workflow with the new software will look like.</p>
+<img src="C:\Users\ryan.krage\Documents\GitHub\College\compSci\CompSci Project\writeUp\as-is use case.PNG?v=1487330447753">
+<img src="C:\Users\ryan.krage\Documents\GitHub\College\compSci\CompSci Project\writeUp\to-be use case.PNG?v=1487330447755">
+<h3>Class Diagram</h3>
+<p>I have created a class diagram to show the relationship between employees and tasks. While very simple, this could be considered a relational database (Employees have a one-to-many relationship with tasks), but the data set is small enough that a full-blown DBMS is not required (see Scope, above). It also makes it clear which attributes belong to which class.</p>
+<img src="C:\Users\ryan.krage\Documents\GitHub\College\compSci\CompSci Project\writeUp\class diagram.PNG?v=1487330447755">
+<h3>S.M.A.R.T objectives</h3>
+<p>In order to help with evaluating the success of this project, I have used the above information to create a set of Specific, Measurable, Achievable, Relevant, Time-Bound objectives to complete. The goals are things the program should do in order to fulfill the clients requests. The objectives must be S.M.A.R.T so that can be used as a measure of progress and success.
+While the objectives themselves are not necessarily time-bound, I will follow the schedule in appendix 3.1, so all of these goals do have a deadline.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Ensure that:</th>
+<th style="text-align:left">Specific</th>
+<th style="text-align:left">Measurable</th>
+<th style="text-align:left">Achievable</th>
+<th style="text-align:left">Relevant</th>
+<th style="text-align:left">Time-bound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">User can add employees</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+</tr>
+<tr>
+<td style="text-align:left">User can edit employees</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+</tr>
+<tr>
+<td style="text-align:left">Program correctly adds pay according to complete tasks</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+</tr>
+<tr>
+<td style="text-align:left">Program saves data</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+</tr>
+<tr>
+<td style="text-align:left">Program retrieves data correctly</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+</tr>
+</tbody>
+</table>

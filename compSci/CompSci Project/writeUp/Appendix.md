@@ -6,6 +6,7 @@ This is the help feature the user can reference for help with utilising the prog
 
 This is the code that generates the above page;
 
+```HTM
     <!DOCTYPE html>
     <html>
       <head>
@@ -42,20 +43,9 @@ This is the code that generates the above page;
         <p>Due pay is calculated by adding the value of all tasks which have been completed.<br>If the due pay does not update after marking a task as complete, try selecting a different employee and the re-selecting the first one.</p>
       </body>
     </html>
+```
 
 
 ### 1.2: Relative file paths
 A relative file path is used when there is no access to higher directories, only lower ones. Most file paths start at the root directory, e.g, C:/ on windows or / on Linux and Unix.  
 As my program is designed to be run on any windows computer in any location, it cannot use the install location to get the file paths of the program resources, such as the help document.
-
-### 2.1: flowchart for various buttons
-[flowchart]
-
-### 2.2 IOPS diagram
-[IOPS]
-
-### 2.3 Use-case Diagram
-[Use case Diagram]
-
-### 3.1
-[schedule]
