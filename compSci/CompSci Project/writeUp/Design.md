@@ -6,7 +6,7 @@ This solution would require the user to re-enter all of the employees informatio
 A better solution would be to create a file to store information about each employee. This could be a simple text file, with the name of each task (and whether or not it is completed) on each line.  
 This solution also allows the program to save the data, satisfying two requirements in one.  
 Assuming that different tasks have different pay, this will also be saved in the file.  
-Each line could have the format of taskName;pay;completed.  
+Each line could have the format of <code>taskName;pay;completed</code>.  
 ### Calculating pay
 The calculation is very simple, number of tasks completed * pay per task.  
 There will need to be a setting for the pay per task. As different tasks may be worth different amounts, the pay will be set when the task is created.  

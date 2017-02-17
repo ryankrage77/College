@@ -83,8 +83,8 @@ In order to help with evaluating the success of this project, I have used the ab
 While the objectives themselves are not necessarily time-bound, I will follow the schedule in appendix 3.1, so all of these goals do have a deadline.
 | Ensure that: | Specific | Measurable | Achievable | Relevant | Time-bound |
 | :----------- | :------- | :--------- |:---------- | :------- | :--------- |
-| User can add employees  | Y | Y | Y| Y | Y |
+| User can add employees  | Y | Y | Y | Y | Y |
 | User can edit employees | Y | Y | Y | Y | Y |
-| Program correctly adds pay according to complete tasks | Y | Y | Y |Y | Y |
+| Program correctly adds pay according to complete tasks | Y | Y | Y | Y | Y |
 | Program saves data | Y | Y | Y | Y | Y |
 | Program retrieves data correctly | Y | Y | Y | Y | Y |
