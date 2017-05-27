@@ -10,12 +10,9 @@ Done but not marked:
 40 (printed)
 
 Not done:
-5
-12
-14
-18
-26
+5? - networking
+12 - technical support
+14 - Event driven programming
 28 (started)
 30 (started, 30.1 finished)
-31
-42
+31 (started)
