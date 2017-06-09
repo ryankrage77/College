@@ -1,0 +1,7 @@
+
+
+SELECT Members.Surname, Members.Forename, Members.EmailAddress
+
+FROM Members INNER JOIN    (Books INNER JOIN Loans ON Books.BookID = Loans.BookID)    ON    Members.MemberID = Loans.MemberID
+
+WHERE (((Books.Author)="Lucas Bailey"));

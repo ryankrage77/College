@@ -1,0 +1,6 @@
+
+Student(*CentreNumber, CandidateNumber*, Forename, Surname)
+Qualification(*QualificationID*, Subject, Level)
+Module(*ModuleCode*, QualificationID, Name, UMSpoints)
+Exam(*Session, CentreNumber, CandidateNumber*, ModuleCode)
+
