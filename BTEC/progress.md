@@ -1,8 +1,8 @@
 # BTEC Progress
-## Days Remaining: 12
-## Units Remaining: 3.6
-## Assignments Remaining: ~9
-## Criteria Remaining: ~52
+## Days Remaining: 6
+## Units Remaining: 2.5
+## Assignments Remaining: 7.6
+## Criteria Remaining: 30
 
 ### Done & marked:
 - 1
@@ -18,6 +18,4 @@
 ### Not done:
 - 12 technical support
 - 14 Event driven programming
-- 28 Website Design (started)
-- 30 Graphics (started, 30.1 finished)
-- 31 Animation (started)
+- 31 Animation (started, 31.1 finished)

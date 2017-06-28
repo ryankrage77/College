@@ -5,3 +5,8 @@ SELECT Members.Surname, Members.Forename, Members.EmailAddress
 FROM Members INNER JOIN    (Books INNER JOIN Loans ON Books.BookID = Loans.BookID)    ON    Members.MemberID = Loans.MemberID
 
 WHERE (((Books.Author)="Lucas Bailey"));
+
+
+SELECT vehicle.model, vehicle.colour, owner.forename, owner.surname FROM Owner
+INNER JOIN vehicle ON owner.ownerID = vehicle.ownerID
+WHERE vehicle.registrationNumber = "";
