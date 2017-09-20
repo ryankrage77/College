@@ -1,0 +1,69 @@
+//get info such as wall dimensions and paint type
+wallOne = input("length of wall one: ")
+wallTwo = input("length of wall two: ")
+height = input("height of room: ")
+undercoat = input("undercoat? yes/no: ")
+
+//turn undercoat into a boolean
+if(undercoat == "yes")
+{
+        undercoat = True
+}else{
+        undercoat = False
+}
+
+paintType = input("Type of paint? wallpaper/luxury/standard/economy: ")
+
+//calculate the area of the walls
+area = wallOne * height + wallTwo * height * 2
+
+if(paintType == "wallpaper")
+{
+        if(undercoat == True)
+	{
+		//cost of paint plus undercoat
+                paintCost = (area * 8) + (area * 0.5)
+        }else{
+		//just cost of paint
+                paintCost = area * 8
+	}
+}
+
+if(paintType == "luxury")
+{
+        if(undercoat == True)
+	{
+                paintCost = (area * 1.75) + (area * 0.5)
+        }else{
+                paintCost = area * 1.75
+	}
+}
+
+if(paintType == "standard")
+{
+        if(undercoat == True)
+	{
+                paintCost = area + (area * 0.5)
+        }else{
+                paintCost = area
+	}
+}
+
+if(paintType == "economy")
+{
+        if(undercoat == True)
+	{
+                paintCost = area * 0.45 + area * 0.5
+        }else{
+                paintCost = area * 0.45
+	}
+}
+
+//work out the costs
+timeCost = area / 4 * 12
+totalCost = timeCost + paintCost
+
+//display the costs
+print("Cost of Paint: £", paintCost)
+print("Cost of painter: £", timeCost)
+print("Total Cost: £", totalCost)
